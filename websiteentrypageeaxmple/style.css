@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Redacted+Script:wght@300;400&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Corinthia', cursive;
+    background-color: rgb(42, 146, 236);
+    /*background-image:url(data:image/png;base64,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);
+   */ color: red;
+}
+.navbar{
+    background-color:black;
+    color: white;
+    height: 70px;
+    margin-top: 50px;
+    
+}
+.logo{
+    width: 5%;
+    position: absolute;
+    left: 0px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+.logo:hover{
+    opacity: 1;
+}
+.navbar li {
+
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    left: 750px;
+    margin-top: 12px;
+}
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.navbar li a:hover{
+    font-size: 20px;
+    color: red;
+}
+
+.moon
+{
+opacity:0.8;
+width: 70%;
+margin: auto;
+display: block;
+}
+.moon:hover
+{
+    opacity: 1;
+}
+.entery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1ft));
+}
+
+.title h2{
+    font-size: 4rem;
+    display: block;
+    margin-left: 700px; 
+}
+.btn{
+    opacity: 0.5;
+    background-color: tomato;
+    height:50px;
+    position: absolute;
+    top: 986px;
+    right: 212px;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    opacity: 1;
+    color: red;
+    background-color: yellow;
+}
+.img{
+    ;
+}
+.scroll{
+    opacity: 0.5;
+    margin-left: 870px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    background-color: yellow;
+    border-style: solid;
+    text-decoration: none;
+    
+}
+.scroll:hover
+{
+opacity:6;
+}
+
