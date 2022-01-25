@@ -1,107 +1,116 @@
-* {
-    box-sizing: border-box;
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
+.header{
+  width: 600px;
+  height: 150px;
+  background: rgb(211, 211, 15);
+  text-align: center; 
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+h1 {
+  color: rgb(68, 17, 162);
+  margin-top: 40px; 
+}
+
+ul{
+ margin: 0 auto;
+ padding: 0;
+ width: 600px;
+}
+
+li {
+  padding: 12px 15px 12px 40px;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  list-style-type: none;
+  background: #eee;
+  width: 100%;   /*parent'ın 100%ünü kullan*/
+}
+
+li:nth-child(odd){
+  background: #cfcbcb;
+}
+
+li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background-color: #be72ae;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before { /* soldaki beyaz check tiki için */
+  content: ""; /*  yazılacak yazı*/
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 13px;
+  left: 16px;
+  transform: rotate(45deg); /* tikin açısını belirleriz*/
+  height: 15px;
+  width: 7px;
+}
+
+#input {
+  width: 75%;
+  float: left;   
+  padding: 10px;
+  border: none;
+}
+
+#ekle {
+  width: 25%;
+  float: left;
+  padding: 10px;
+  color: #555;
+  background: #eee;
+  cursor: pointer;   
+}
+
+#ekle:hover {
+  background: #cfcbcb;
+}
+
+.close {
+  right: 0;
+  top: 0;
+  position: absolute;
+  padding: 12px 15px 12px 20px;
+
+}
+
+.close:hover {
+  background-color: #be72ae;
+  color: white;
+} 
+
+/* .hide {
+  display: none !important; 
+}
+
+.show {
+  display: initial !important;
+} */
+
+@media screen and (max-width: 400px) { /*bu neymiş*/
+  .header, ul {
+    width: 300px;
   }
   
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    background: #eee;
-    font-size: 18px;
-    transition: 0.2s;
-    list-style-type: none;
-  
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  ul li:nth-child(odd) {
-    background: #f9f9f9;
-  }
-  
-  ul li:hover {
-    background: #ddd;
-  }
-  
-  ul li.checked {
-    background: #276678;
-    color: #fff;
-    text-decoration: line-through;
-  }
-  
-  ul li.checked::before {
-    content: "";
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-  }
-  
-  .close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-  }
-  
-  .close:hover {
-    background-color: #f78501;
-    color: white;
-  
-  }
-  
-  .header {
-    background-color: #f78501;
-    padding: 30px 40px;
-    color: white;
-    text-align: center;
-  }
-  
-  img {
-    background-color: white;
-  }
-  
-  .header:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  input {
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    width: 75%;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
-  }
-  
-  .button {
-    padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 0;
-  }
-  
-  .button:hover {
-    background-color: #bbb;
-  }
+}
