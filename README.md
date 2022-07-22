@@ -1,6 +1,6 @@
 # html-css-exercises
 ###html ve css kullanarak yaptığım bazı egzersizler<br>
-1-https://github.com/yektaonureren/html-css-exercises/tree/master/htmlsupersimplewebsite
+
 
 1-<a href="https://github.com/yektaonureren/html-css-exercises/tree/master/htmlsupersimplewebsite">Basit html site</a><br>
 
